@@ -1,6 +1,7 @@
 # EXPERIMENT NO: 11
 ## Implementation-of-SVM-For-Spam-Mail-Detection
-
+#### NAME : AVINASH T
+#### REG NO: 212223230026
 ### AIM:
 To write a program to implement the SVM For Spam Mail Detection.
 
