@@ -17,7 +17,7 @@ To write a program to implement the SVM For Spam Mail Detection.
 5.Print all the outputs.
 6.End the Program.
 
-### Program:
+### Program & Output:
 ```c
 Program to implement the SVM For Spam Mail Detection..
 Developed by: AVINASH T
@@ -68,8 +68,14 @@ y_test.shape
 from sklearn.feature_extraction.text import CountVectorizer
 cv=CountVectorizer()
 x_train=cv.fit_transform(x_train)
-x_test=cv.transform(x_test)
+x_test=cv.fit_transform(x_test)
+x_train.shape
 ```
+![image](https://github.com/user-attachments/assets/8b8e50a8-bc00-43b3-891d-bc39d94757e2)
+```c
+x_test.shape
+```
+![image](https://github.com/user-attachments/assets/ca1fe6cd-4c60-4766-8de1-6ed0f09e3179)
 ```c
 
 ```
@@ -82,11 +88,6 @@ x_test=cv.transform(x_test)
 ```c
 
 ```
-```c
-
-```
-
-## Output:
 
 ## Result:
 Thus the program to implement the SVM For Spam Mail Detection is written and verified using python programming.
