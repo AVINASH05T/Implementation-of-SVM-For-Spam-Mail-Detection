@@ -68,17 +68,23 @@ y_test.shape
 from sklearn.feature_extraction.text import CountVectorizer
 cv=CountVectorizer()
 x_train=cv.fit_transform(x_train)
-x_test=cv.fit_transform(x_test)
+x_test=cv.transform(x_test)
 x_train.shape
 ```
 ![image](https://github.com/user-attachments/assets/8b8e50a8-bc00-43b3-891d-bc39d94757e2)
 ```c
 x_test.shape
 ```
-![image](https://github.com/user-attachments/assets/ca1fe6cd-4c60-4766-8de1-6ed0f09e3179)
+![image](https://github.com/user-attachments/assets/6cf50893-0a0a-4880-8a57-c2d64418fc0b)
 ```c
-
+from sklearn.svm import SVC
+svc=SVC()
+svc.fit(x_train,y_train)
+y_pred=svc.predict(x_test)
+y_pred
 ```
+![image](https://github.com/user-attachments/assets/1959e246-1d8b-42f8-a2eb-46220b6627ba)
+
 ```c
 
 ```
