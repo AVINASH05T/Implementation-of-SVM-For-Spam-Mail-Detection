@@ -84,16 +84,12 @@ y_pred=svc.predict(x_test)
 y_pred
 ```
 ![image](https://github.com/user-attachments/assets/1959e246-1d8b-42f8-a2eb-46220b6627ba)
-
 ```c
-
+from sklearn import metrics
+accuracy=metrics.accuracy_score(y_test,y_pred)
+accuracy
 ```
-```c
-
-```
-```c
-
-```
+![image](https://github.com/user-attachments/assets/7ecb36da-8693-404a-ac46-cb518d6130d3)
 
 ## Result:
 Thus the program to implement the SVM For Spam Mail Detection is written and verified using python programming.
