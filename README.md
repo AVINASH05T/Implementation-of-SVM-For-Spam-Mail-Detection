@@ -17,15 +17,75 @@ To write a program to implement the SVM For Spam Mail Detection.
 6.End the Program.
 
 ### Program:
-```
+```c
 Program to implement the SVM For Spam Mail Detection..
 Developed by: AVINASH T
 RegisterNumber:  212223230026
+import pandas as pd
+data=pd.read_csv("spam.csv",encoding='Windows-1252')
+```
+```c
+data.head()
+```
+![image](https://github.com/user-attachments/assets/90f1d39a-8d75-4677-b226-8852bcf2bbfb)
+```c
+data.info()
+```
+![image](https://github.com/user-attachments/assets/07754f65-3117-4af1-85c0-4cbf659d39b5)
+
+```c
+data.isnull().sum()
+```
+![image](https://github.com/user-attachments/assets/2e759493-1bda-4a5c-b94b-f4c71669a9cb)
+
+```c
+x=data['v2'].values
+y=data['v1'].values
+y.shape
+```
+![image](https://github.com/user-attachments/assets/4cd4e197-a2e6-47fb-ac95-d7972a5ef6ca)
+
+```c
+from sklearn.model_selection import train_test_split
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
+x_train.shape
+```
+![image](https://github.com/user-attachments/assets/911eac86-7409-45cb-be45-24813b76ec8d)
+```c
+x_test.shape
+```
+![image](https://github.com/user-attachments/assets/be746ec6-9b30-4ed6-9b20-b6fa4e84cb0a)
+```c
+y_train.shape
+```
+![image](https://github.com/user-attachments/assets/74300b3f-c807-469d-ad84-ac2aaede1728)
+```c
+y_test.shape
+```
+![image](https://github.com/user-attachments/assets/c3f41c93-c3f1-459a-b6ee-4b25d2dad9a2)
+```c
+from sklearn.feature_extraction.text import CountVectorizer
+cv=CountVectorizer()
+x_train=cv.fit_transform(x_train)
+x_test=cv.transform(x_test)
+```
+```c
+
+```
+```c
+
+```
+```c
+
+```
+```c
+
+```
+```c
+
 ```
 
 ## Output:
-![SVM For Spam Mail Detection](sam.png)
-
 
 ## Result:
 Thus the program to implement the SVM For Spam Mail Detection is written and verified using python programming.
